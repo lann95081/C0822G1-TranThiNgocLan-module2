@@ -11,7 +11,7 @@ public class DisplayPrime {
         int n = 2;
         while (count < numbers) {
             boolean check = true;
-            for (int i = 2; i < Math.sqrt(numbers); i++) {
+            for (int i = 2; i <= Math.sqrt(numbers); i++) {
                 if (n % i == 0) {
                     check = false;
                     break;
