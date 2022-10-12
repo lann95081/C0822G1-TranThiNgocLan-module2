@@ -33,7 +33,6 @@ public class Circle {
     }
 
     public String toString() {
-        return "radius=" + getRadius()
-                + "\t area: " + getArea();
+        return String.format("%.1f,%.1f,%s", getRadius(), getArea(), getColor());
     }
 }
