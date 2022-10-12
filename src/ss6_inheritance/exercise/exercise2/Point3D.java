@@ -1,5 +1,7 @@
 package ss6_inheritance.exercise.exercise2;
 
+import java.util.Arrays;
+
 public class Point3D extends Point2D {
     private float z = 0.0f;
 
@@ -29,12 +31,11 @@ public class Point3D extends Point2D {
     }
 
     public float[] getXYZ() {
-        return new float[3];
+        return new float[]{getX(), getY(), getZ()};
     }
 
     public String toString() {
-        return "(" + super.toString() + "," + getZ() + ")";
+        return String.format("%.1f - %.1f - %.1f", super.getX(), super.getY(), getZ())
+                + "\t Array " + Arrays.toString(getXYZ());
     }
-
-
 }
