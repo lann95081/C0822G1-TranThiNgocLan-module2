@@ -12,11 +12,11 @@ public class MainController {
 
         do {
             System.out.println("\n QUẢN LÍ SẢN PHẨM:\n "
-                    + "1. Thêm sản phẩm\n "
+                    + "1. Thêm mới sản phẩm\n "
                     + "2. Sửa thông tin sản phẩm theo id\n "
                     + "3. Xoá sản phẩm theo id\n "
                     + "4. Hiển thị danh sách sản phẩm\n "
-                    + "5. Tìm kiếm ản phẩm theo tên\n "
+                    + "5. Tìm kiếm sản phẩm theo tên\n "
                     + "6. Sắp xếp sản phẩm tăng dần, giảm dần theo giá\n "
                     + "7. Thoát.");
 
