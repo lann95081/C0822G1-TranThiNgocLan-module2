@@ -9,18 +9,18 @@ public class StringReserve {
         Stack<String> stringReserve = new Stack<>();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập chuỗi bất kì: ");
-        String string = scanner.nextLine();
+        StringBuilder string = new StringBuilder(scanner.nextLine());
 
-        String[] stringArr = string.split("");
+        String[] stringArr = string.toString().split("");
         System.out.println(Arrays.toString(stringArr));
 
         for (String item : stringArr) {
             stringReserve.push(item);
         }
 
-        string = "";
+        string = new StringBuilder();
         while (!stringReserve.isEmpty()) {
-            string += stringReserve.pop() + "";
+            string.append(stringReserve.pop());
         }
         System.out.println(string);
     }
