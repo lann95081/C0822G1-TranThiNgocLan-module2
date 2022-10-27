@@ -1,10 +1,10 @@
 package ss17_io_binary_file_serialization.exercise.product_management_save_binary.view;
 
 import ss17_io_binary_file_serialization.exercise.product_management_save_binary.controller.TestController;
-import ss17_io_binary_file_serialization.exercise.product_management_save_binary.exception.DuplicateIDException;
+import ss17_io_binary_file_serialization.exercise.product_management_save_binary.exception.IDException;
 
 public class View {
-    public static void main(String[] args) throws DuplicateIDException {
+    public static void main(String[] args) throws IDException {
         TestController.menuController();
     }
 }

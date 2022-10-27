@@ -21,11 +21,11 @@ public class ReadWriteProductFileUtil {
 
     }
 
-    public static void writeProductFile(String path, List<Product> productManagenmentList) {
+    public static void writeProductFile(String path, List<Product> productList) {
         try {
             FileOutputStream fos = new FileOutputStream(path);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(productManagenmentList);
+            oos.writeObject(productList);
             oos.close();
         } catch (IOException e) {
             e.printStackTrace();

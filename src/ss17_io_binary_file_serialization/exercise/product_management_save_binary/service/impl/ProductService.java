@@ -1,6 +1,6 @@
 package ss17_io_binary_file_serialization.exercise.product_management_save_binary.service.impl;
 
-import ss17_io_binary_file_serialization.exercise.product_management_save_binary.exception.DuplicateIDException;
+import ss17_io_binary_file_serialization.exercise.product_management_save_binary.exception.IDException;
 import ss17_io_binary_file_serialization.exercise.product_management_save_binary.model.Product;
 import ss17_io_binary_file_serialization.exercise.product_management_save_binary.service.IProductService;
 import ss17_io_binary_file_serialization.exercise.product_management_save_binary.utils.ReadWriteProductFileUtil;
@@ -24,13 +24,13 @@ public class ProductService implements IProductService {
 
                 for (Product product : productList) {
                     if (product.getId() == id) {
-                        throw new DuplicateIDException("Trùng id, vui lòng nhập lại!");
+                        throw new IDException("Trùng id, vui lòng nhập lại!");
                     }
                 }
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Vui lòng nhập số!");
-            } catch (DuplicateIDException e) {
+            } catch (IDException e) {
                 System.out.println(e.getMessage());
             }
         }

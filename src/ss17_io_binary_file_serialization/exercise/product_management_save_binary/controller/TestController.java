@@ -1,6 +1,6 @@
 package ss17_io_binary_file_serialization.exercise.product_management_save_binary.controller;
 
-import ss17_io_binary_file_serialization.exercise.product_management_save_binary.exception.DuplicateIDException;
+import ss17_io_binary_file_serialization.exercise.product_management_save_binary.exception.IDException;
 import ss17_io_binary_file_serialization.exercise.product_management_save_binary.model.Product;
 import ss17_io_binary_file_serialization.exercise.product_management_save_binary.service.IProductService;
 import ss17_io_binary_file_serialization.exercise.product_management_save_binary.service.impl.ProductService;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TestController {
-    public static void menuController() throws DuplicateIDException {
+    public static void menuController() throws IDException {
         List<Product> productList = new ArrayList<>();
         productList.add(new Product(1, "Tủ lạnh", "Toshiba", 200000));
         ReadWriteProductFileUtil.writeProductFile("src/ss17_io_binary_file_serialization/exercise/product_management_save_binary/data/product.csv", productList);
