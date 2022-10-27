@@ -52,9 +52,10 @@ public class Product implements Serializable {
 
     @Override
     public String toString() {
-        return "  Mã sản phẩm: " + getId() +
-                ", Tên sản phẩm: '" + getName() +
-                ", Hãng sản xuất: '" + getManufacturer() +
-                ", Giá sản phẩm: " + getPrice() + "(VND)";
+        return "Product [ " +
+                "Mã sản phẩm: " + id +
+                ", Tên sản phẩm: '" + name + '\'' +
+                ", Hãng sản xuất: '" + manufacturer + '\'' +
+                ", Giá: " + price + "(VND)" + " ]";
     }
 }
